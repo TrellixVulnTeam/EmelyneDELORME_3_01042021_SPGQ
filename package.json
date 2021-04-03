@@ -1,0 +1,23 @@
+{
+  "name": "emelynedelorme_3_01042021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch SASS/style.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmelyneDelorme/EmelyneDELORME_3_01042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmelyneDelorme/EmelyneDELORME_3_01042021/issues"
+  },
+  "homepage": "https://github.com/EmelyneDelorme/EmelyneDELORME_3_01042021#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
+  }
+}

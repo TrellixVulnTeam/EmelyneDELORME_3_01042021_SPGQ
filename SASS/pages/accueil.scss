@@ -1,0 +1,60 @@
+.resa {
+  text-align: center;
+  background-color: #f2f2f2;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdb5b5;
+    font-size: 30px;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding-bottom: 30px;
+  &__carte {
+    border-radius: 20px;
+    width: 90%;
+    height: 500px;
+    line-height: 0px;
+    box-shadow: 3px 3px 5px rgb(216, 213, 213);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      object-position: 0% 60%;
+    }
+  }
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  &__etape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    background-color: #f2f2f2;
+    border-radius: 40px / 40px;
+    &__numero {
+      background-color: $color-primary;
+      border-radius: 40px / 40px;
+      padding: 20px;
+      color: white;
+    }
+  }
+}
