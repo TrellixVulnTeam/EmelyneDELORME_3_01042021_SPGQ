@@ -1,12 +1,16 @@
 .resa {
   text-align: center;
   background-color: #f2f2f2;
+  height: 500px;
+  p {
+    font-size: 30px;
+  }
   &__header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #bdb5b5;
+    background-color: #dad3d3;
     font-size: 30px;
   }
 }
@@ -33,28 +37,6 @@
       height: 80%;
       object-fit: cover;
       object-position: 0% 60%;
-    }
-  }
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  &__etape {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90%;
-    background-color: #f2f2f2;
-    border-radius: 40px / 40px;
-    &__numero {
-      background-color: $color-primary;
-      border-radius: 40px / 40px;
-      padding: 20px;
-      color: white;
     }
   }
 }
