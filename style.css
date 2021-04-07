@@ -14,12 +14,21 @@ h2 {
   font-size: 55px;
 }
 
+h3 {
+  font-family: shrikhand, sans-serif;
+}
+
 .logo {
   font-family: shrikhand, sans-serif;
   margin: 0;
 }
 
-header {
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header__accueil {
   box-shadow: 0 4px 4px -2px #c3c3c3;
   margin-bottom: 3px;
 }
@@ -97,7 +106,7 @@ header {
   color: #278870;
   background-color: #99e2d0;
   width: 230px;
-  height: 60px;
+  height: 70px;
   font-size: 40px;
   text-align: center;
   border-radius: 10px;
@@ -106,10 +115,41 @@ header {
   margin-left: 20px;
 }
 
+img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 3000px;
+}
+
+.plat {
+  border-radius: 20px;
+  width: 90%;
+  box-shadow: 3px 3px 5px #d8d5d5;
+  background-color: white;
+}
+
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-size: 60px;
   padding: 15px;
+}
+header a {
+  color: #444444;
+  font-size: 40px;
 }
 
 footer {
@@ -121,6 +161,9 @@ footer {
   line-height: 50px;
   padding-left: 40px;
   padding-bottom: 40px;
+}
+footer a {
+  color: white;
 }
 
 .resa__btn {

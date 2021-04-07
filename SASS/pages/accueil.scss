@@ -1,4 +1,4 @@
-header {
+.header__accueil {
   box-shadow: 0 4px 4px -2px darken($background, 20%);
   margin-bottom: 3px;
 }
@@ -74,7 +74,7 @@ header {
       color: darken($color-tertiary, 40%);
       background-color: $color-tertiary;
       width: 230px;
-      height: 60px;
+      height: 70px;
       font-size: 40px;
       text-align: center;
       border-radius: 10px;
