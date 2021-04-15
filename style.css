@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -16,6 +17,18 @@ h2 {
 
 h3 {
   font-family: shrikhand, sans-serif;
+  font-size: 70px;
+  align-self: start;
+  margin-left: 30px;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-left: 30px;
+  border-bottom: 6px solid #99e2d0;
+  width: 100px;
 }
 
 .logo {
@@ -106,7 +119,7 @@ a {
   color: #278870;
   background-color: #99e2d0;
   width: 230px;
-  height: 70px;
+  height: 75px;
   font-size: 40px;
   text-align: center;
   border-radius: 10px;
@@ -117,19 +130,26 @@ a {
 
 img {
   width: 100%;
-  height: 1000px;
+  height: 700px;
   object-fit: cover;
+  z-index: 1;
 }
 
 .menus {
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
   height: 3000px;
+  margin-top: -110px;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+.menus__resa__btn {
+  margin: 40px, 0 !important;
 }
 
 .plat {
@@ -137,6 +157,24 @@ img {
   width: 90%;
   box-shadow: 3px 3px 5px #d8d5d5;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  line-height: 0px;
+}
+.plat__nom {
+  font-weight: 700;
+  margin-left: 20px;
+}
+.plat__comm {
+  margin-left: 20px;
+  font-weight: 300;
+}
+.plat__prix {
+  font-weight: 700;
+  position: absolute;
+  right: 60px;
+  text-align: bottom;
 }
 
 header {
@@ -150,6 +188,8 @@ header {
 header a {
   color: #444444;
   font-size: 40px;
+  position: absolute;
+  left: 40px;
 }
 
 footer {
@@ -161,9 +201,14 @@ footer {
   line-height: 50px;
   padding-left: 40px;
   padding-bottom: 40px;
+  height: 300px;
 }
 footer a {
   color: white;
+}
+footer .logo {
+  font-size: 40px;
+  margin: 20px 0;
 }
 
 .resa__btn {
@@ -173,7 +218,8 @@ footer a {
   border-radius: 60px/60px;
   font-size: 40px;
   border: none;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  margin-bottom: 20px;
 }
 
 .fonctionnement {
@@ -202,6 +248,12 @@ footer a {
 .fonctionnement__etape i {
   color: #909090;
   margin: 0 70px 0 70px;
+}
+.fonctionnement__etape--niveau {
+  background-color: #ece1f9;
+}
+.fonctionnement__etape--niveau i {
+  color: #9356dc;
 }
 .fonctionnement__etape__numero {
   background-color: #9356dc;

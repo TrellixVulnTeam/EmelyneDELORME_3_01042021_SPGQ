@@ -8,5 +8,7 @@ header {
   a {
     color: darken($background, 70%);
     font-size: 40px;
+    position: absolute;
+    left: 40px;
   }
 }
