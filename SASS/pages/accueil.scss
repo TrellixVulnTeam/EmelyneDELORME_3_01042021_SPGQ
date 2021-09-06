@@ -1,6 +1,5 @@
 .header__accueil {
-  box-shadow: 0 4px 4px -2px darken($background, 20%);
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .resa {
@@ -24,9 +23,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: darken($background, 5%);
+    background-color: darken($background, 3%);
     font-size: 30px;
     width: 100%;
+    box-shadow: inset 0px 5px 5px darken($background, 10%);
     i {
       margin: 20px;
     }
@@ -55,10 +55,10 @@
     background-color: white;
     margin: 30px 0;
     position: relative;
+    z-index: 1;
     img {
       width: 100%;
       height: 70%;
-      object-fit: cover;
       object-position: 0% 60%;
     }
     .lieu {
@@ -66,8 +66,16 @@
       font-weight: 300;
       padding: 30px 0;
     }
+    i {
+      font-size: 70px;
+      z-index: 2;
+      position: absolute;
+      bottom: 70px;
+      right: 30px;
+    }
     &__nouveau {
       position: absolute;
+      z-index: 2;
       top: 20px;
       right: 20px;
       font-weight: 400;

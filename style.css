@@ -42,8 +42,7 @@ a {
 }
 
 .header__accueil {
-  box-shadow: 0 4px 4px -2px #c3c3c3;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .resa {
@@ -68,9 +67,10 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #e9e9e9;
+  background-color: #eeeeee;
   font-size: 30px;
   width: 100%;
+  box-shadow: inset 0px 5px 5px #dddddd;
 }
 .resa__header i {
   margin: 20px;
@@ -99,11 +99,11 @@ a {
   background-color: white;
   margin: 30px 0;
   position: relative;
+  z-index: 1;
 }
 .restaurants__carte img {
   width: 100%;
   height: 70%;
-  object-fit: cover;
   object-position: 0% 60%;
 }
 .restaurants__carte .lieu {
@@ -111,8 +111,16 @@ a {
   font-weight: 300;
   padding: 30px 0;
 }
+.restaurants__carte i {
+  font-size: 70px;
+  z-index: 2;
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+}
 .restaurants__carte__nouveau {
   position: absolute;
+  z-index: 2;
   top: 20px;
   right: 20px;
   font-weight: 400;
