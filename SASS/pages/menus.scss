@@ -24,24 +24,38 @@ img {
 
 .plat {
   border-radius: 20px;
+  border: none;
   width: 90%;
   box-shadow: 3px 3px 5px rgb(216, 213, 213);
   background-color: white;
   font-size: 40px;
   line-height: 0px;
+  :hover {
+    cursor: pointer;
+  }
+  &__selection {
+    background-color: $color-tertiary;
+    i {
+      color: white;
+    }
+  }
   &__nom {
     font-weight: 700;
     margin-left: 20px;
+    text-align: start;
   }
   &__comm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 20px 0px 20px;
-    font-weight: 300;
+    margin: 0px 20px;
 
+    &__1 {
+      font-size: 30px;
+    }
     &__prix {
       font-weight: 700;
+      font-size: 30px;
       right: 60px;
     }
   }

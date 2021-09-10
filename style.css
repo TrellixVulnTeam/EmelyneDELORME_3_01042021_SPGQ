@@ -162,25 +162,39 @@ img {
 
 .plat {
   border-radius: 20px;
+  border: none;
   width: 90%;
   box-shadow: 3px 3px 5px #d8d5d5;
   background-color: white;
   font-size: 40px;
   line-height: 0px;
 }
+.plat :hover {
+  cursor: pointer;
+}
+.plat__selection {
+  background-color: #99e2d0;
+}
+.plat__selection i {
+  color: white;
+}
 .plat__nom {
   font-weight: 700;
   margin-left: 20px;
+  text-align: start;
 }
 .plat__comm {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 20px 0px 20px;
-  font-weight: 300;
+  margin: 0px 20px;
+}
+.plat__comm__1 {
+  font-size: 30px;
 }
 .plat__comm__prix {
   font-weight: 700;
+  font-size: 30px;
   right: 60px;
 }
 
