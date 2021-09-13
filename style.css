@@ -198,6 +198,76 @@ img {
   right: 60px;
 }
 
+.selection__plat {
+  border-radius: 20px;
+  border: none;
+  width: 90%;
+  box-shadow: 3px 3px 5px #d8d5d5;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+.selection__plat :hover {
+  cursor: pointer;
+}
+.selection__plat :hover + .selection__plat__checked {
+  transform: scaleX(1);
+  transition: transform 330ms;
+  transform-origin: right;
+}
+.selection__plat :hover + .selection__plat__checked span {
+  display: inline-block;
+  transform: rotate(1turn);
+  transition: transform 800ms;
+}
+.selection__plat__info {
+  font-size: 40px;
+  line-height: 0px;
+  width: 100%;
+}
+.selection__plat__info__nom {
+  font-weight: 700;
+  margin-left: 20px;
+  text-align: start;
+}
+.selection__plat__info__comm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.selection__plat__info__comm__1 {
+  font-size: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 50px;
+  line-height: 50px;
+}
+.selection__plat__info__comm__prix {
+  font-weight: 700;
+  font-size: 30px;
+}
+.selection__plat__checked {
+  background-color: #99e2d0;
+  width: 20%;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+}
+.selection__plat__checked i {
+  color: white;
+  font-size: 50px;
+}
+.selection__plat__checked span {
+  transform: rotate(0turn);
+}
+
 header {
   display: flex;
   flex-direction: row;

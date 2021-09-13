@@ -60,3 +60,76 @@ img {
     }
   }
 }
+
+//DEBUT DU TEST bouton selection d'un plat//
+.selection__plat {
+  border-radius: 20px;
+  border: none;
+  width: 90%;
+  box-shadow: 3px 3px 5px rgb(216, 213, 213);
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  :hover {
+    cursor: pointer;
+  }
+  :hover {
+    + .selection__plat__checked {
+      transform: scaleX(1);
+      transition: transform 330ms;
+      transform-origin: right;
+      span {
+        display: inline-block;
+        transform: rotate(1turn);
+        transition: transform 800ms;
+      }
+    }
+  }
+  &__info {
+    font-size: 40px;
+    line-height: 0px;
+    width: 100%;
+    &__nom {
+      font-weight: 700;
+      margin-left: 20px;
+      text-align: start;
+    }
+    &__comm {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0px 20px;
+      &__1 {
+        font-size: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 50px;
+        line-height: 50px;
+      }
+      &__prix {
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
+  }
+  &__checked {
+    background-color: $color-tertiary;
+    width: 20%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scaleX(0);
+    i {
+      color: white;
+      font-size: 50px;
+    }
+    span {
+      transform: rotate(0turn);
+    }
+  }
+}
