@@ -1,3 +1,4 @@
+//bouton Explorer nos restaurants//
 .resa__btn {
   width: 60%;
   color: white;
@@ -12,7 +13,9 @@
   );
   margin-bottom: 20px;
 }
+//Fin bouton Explorer nos restaurants//
 
+//boutons Etape fonctionnement du site//
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -54,3 +57,38 @@
     }
   }
 }
+//Fin boutons Etape fonctionnement du site//
+
+//bouton Coeur - mise en Favoris d'un menu//
+.heart {
+  cursor: pointer;
+  .far {
+    z-index: 2;
+    font-size: 70px;
+  }
+  .fas {
+    background: linear-gradient(
+      to bottom right,
+      $color-secondary,
+      $color-primary
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3;
+    font-size: 58px;
+    position: absolute;
+    bottom: 77px;
+    right: 36px;
+    transform: scale(0);
+  }
+  :hover {
+    + .fas {
+      transform: scale(1);
+      transition: transform 330ms;
+      transform-origin: bottom;
+      transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+  }
+}
+
+//Fin bouton Coeur - mise en Favoris d'un menu//

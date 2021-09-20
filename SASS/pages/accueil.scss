@@ -66,13 +66,6 @@
       font-weight: 300;
       padding: 30px 0;
     }
-    i {
-      font-size: 70px;
-      z-index: 2;
-      position: absolute;
-      bottom: 70px;
-      right: 30px;
-    }
     &__nouveau {
       position: absolute;
       z-index: 2;
@@ -89,6 +82,11 @@
     }
     &__texte {
       margin-left: 20px;
+      .far {
+        position: absolute;
+        bottom: 70px;
+        right: 30px;
+      }
     }
   }
 }
