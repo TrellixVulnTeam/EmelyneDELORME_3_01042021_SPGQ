@@ -73,12 +73,10 @@
       $color-primary
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 3;
     font-size: 58px;
-    position: absolute;
-    bottom: 77px;
-    right: 36px;
     transform: scale(0);
   }
   :hover {

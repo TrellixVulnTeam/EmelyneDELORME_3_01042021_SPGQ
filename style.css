@@ -133,6 +133,11 @@ a {
   bottom: 70px;
   right: 30px;
 }
+.restaurants__carte__texte .fas {
+  position: absolute;
+  bottom: 77px;
+  right: 36px;
+}
 
 img {
   width: 100%;
@@ -156,6 +161,28 @@ img {
 }
 .menus__resa__btn {
   margin: 40px, 0 !important;
+}
+
+.menus__intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menus__intro .heart {
+  margin-right: 50px;
+  border: none;
+  background-color: #f6f6f6;
+  white-space: nowrap;
+}
+.menus__intro .heart .far {
+  position: relative;
+}
+.menus__intro .heart .fas {
+  position: absolute;
+  right: 62px;
+  top: 90px;
 }
 
 .plat {
@@ -367,12 +394,10 @@ footer .logo {
 .heart .fas {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 3;
   font-size: 58px;
-  position: absolute;
-  bottom: 77px;
-  right: 36px;
   transform: scale(0);
 }
 .heart :hover + .fas {
