@@ -8,8 +8,8 @@ body {
 }
 .AA {
   opacity: 0;
-  animation: 2500ms AAappears;
-  animation-delay: 3000ms;
+  animation: 1s AAappears;
+  animation-delay: 1500ms;
   animation-fill-mode: forwards;
   z-index: 10;
   position: absolute;
@@ -22,17 +22,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 3000ms loader-1;
-  transform-origin: top;
-  background-color: yellow;
   z-index: 0;
-  animation-delay: 1500ms;
-  animation-fill-mode: forwards;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
   &__spinner {
-    width: 100%;
+    width: 90%;
     height: 80px;
     background-color: $color-tertiary;
-    animation: 1500ms loader;
+    animation: 2000ms loader;
     transform-origin: 0% 50%;
     opacity: 0;
     display: flex;
@@ -46,39 +45,16 @@ body {
 @keyframes loader {
   0% {
     transform: scaleX(0);
+    opacity: 0;
+  }
+  25% {
     opacity: 1;
   }
-  17% {
-    transform: scaleX(0.18);
-    opacity: 1;
-  }
-  24% {
-    transform: scaleX(0.4);
-    opacity: 1;
-  }
-  46% {
-    transform: scaleX(0.81);
+  70% {
     opacity: 1;
   }
   98% {
     transform: scaleX(1);
-    opacity: 1;
-  }
-  100% {
-    display: none;
-    opacity: 1;
-  }
-}
-
-@keyframes loader-1 {
-  0% {
-    transform: scaleY(1);
-    opacity: 1;
-    z-index: 5;
-  }
-  98% {
-    transform: scaleY(0);
-    opacity: 1;
   }
   100% {
     display: none;
@@ -89,18 +65,6 @@ body {
 @keyframes AAappears {
   0% {
     opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
   }
   100% {
     opacity: 1;
