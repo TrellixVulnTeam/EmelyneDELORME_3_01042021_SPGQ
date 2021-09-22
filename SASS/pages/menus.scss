@@ -43,6 +43,18 @@ img {
   }
 }
 
+@keyframes apparition {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .selection__plat {
   border-radius: 20px;
   border: none;
@@ -53,6 +65,8 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
+  animation: 900ms apparition;
+  opacity: 0;
   :hover {
     cursor: pointer;
   }
@@ -117,4 +131,19 @@ img {
       transform: rotate(0turn);
     }
   }
+}
+.timing01 {
+  animation-fill-mode: forwards;
+}
+.timing02 {
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+}
+.timing03 {
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+.timing04 {
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
 }
