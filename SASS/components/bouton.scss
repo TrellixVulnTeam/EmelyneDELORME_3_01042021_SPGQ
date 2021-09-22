@@ -1,5 +1,8 @@
 //bouton Explorer nos restaurants//
 .resa__btn {
+  &:hover {
+    cursor: pointer;
+  }
   width: 60%;
   color: white;
   height: 120px;
@@ -12,6 +15,7 @@
     $color-primary
   );
   margin-bottom: 20px;
+  box-shadow: 3px 3px 5px rgb(216, 213, 213);
 }
 //Fin bouton Explorer nos restaurants//
 
@@ -90,3 +94,12 @@
 }
 
 //Fin bouton Coeur - mise en Favoris d'un menu//
+
+//Bouton principaux//
+.bouton-principal {
+  &:hover,
+  &:active {
+    opacity: 0.7 !important;
+    box-shadow: 3px 3px 5px rgb(134, 132, 132);
+  }
+}
