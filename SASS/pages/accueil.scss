@@ -86,6 +86,9 @@ body {
     font-size: 40px;
     font-weight: 300;
     width: 80%;
+    @include desktop {
+      font-size: 30px;
+    }
   }
   &__header {
     display: flex;
@@ -102,6 +105,9 @@ body {
     p {
       width: auto;
       font-size: 35px;
+      @include desktop {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -112,6 +118,16 @@ body {
   align-items: center;
   background-color: $background;
   padding-bottom: 80px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   &__carte {
     border-radius: 20px;
     width: 90%;
@@ -125,15 +141,35 @@ body {
     margin: 30px 0;
     position: relative;
     z-index: 1;
+    @include tablet {
+      width: 45%;
+      height: 400px;
+    }
+    @include desktop {
+      width: 45%;
+      height: 400px;
+    }
     img {
       width: 100%;
       height: 70%;
       object-position: 0% 60%;
+      @include tablet {
+        height: 60%;
+      }
+      @include desktop {
+        height: 60%;
+      }
     }
     .lieu {
       font-size: 50px;
       font-weight: 300;
       padding: 30px 0;
+      @include tablet {
+        font-size: 30px;
+      }
+      @include desktop {
+        font-size: 30px;
+      }
     }
     &__nouveau {
       position: absolute;
@@ -148,6 +184,16 @@ body {
       font-size: 40px;
       text-align: center;
       border-radius: 10px;
+      @include tablet {
+        font-size: 25px;
+        width: 160px;
+        height: 50px;
+      }
+      @include desktop {
+        font-size: 25px;
+        width: 160px;
+        height: 50px;
+      }
     }
     &__texte {
       margin-left: 20px;
@@ -155,11 +201,29 @@ body {
         position: absolute;
         bottom: 70px;
         right: 30px;
+        @include tablet {
+          bottom: 30px;
+          font-size: 50px !important;
+        }
+        @include desktop {
+          bottom: 30px;
+          font-size: 50px !important;
+        }
       }
       .fas {
         position: absolute;
         bottom: 77px;
         right: 36px;
+        @include tablet {
+          bottom: 35px;
+          right: 34px;
+          font-size: 42px !important;
+        }
+        @include desktop {
+          bottom: 35px;
+          right: 34px;
+          font-size: 42px !important;
+        }
       }
     }
   }

@@ -8,11 +8,42 @@ footer {
   padding-left: 40px;
   padding-bottom: 40px;
   height: 300px;
+  @include desktop {
+    line-height: 20px;
+  }
+
   a {
     color: white;
+    width: 50%;
+    @include desktop {
+      width: 25%;
+      font-size: 15px;
+      text-align: center;
+    }
   }
   .logo {
     font-size: 40px;
     margin: 20px 0;
+    width: 100%;
+
+    @include desktop {
+      font-size: 32px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }

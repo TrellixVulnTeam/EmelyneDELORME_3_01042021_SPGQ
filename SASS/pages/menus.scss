@@ -1,24 +1,51 @@
-img {
+.image {
+  background-color: darken($background, 70%);
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 700px;
-  object-fit: cover;
-  z-index: 1;
+  img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    z-index: 1;
+    @include tablet {
+      height: 500px;
+    }
+    @include desktop {
+      width: 80%;
+      height: 400px;
+    }
+  }
 }
-
+.carte {
+  background-color: darken($background, 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .menus {
   background-color: $background;
-  border-radius: 60px;
+  border-radius: 60px 60px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 3000px;
+  height: 2200px;
   margin-top: -110px;
   position: relative;
   z-index: 4;
   width: 100%;
+  @include desktop {
+    border-radius: 60px;
+    margin-bottom: 30px;
+    height: 1400px;
+  }
   &__resa__btn {
     margin: 40px 0 !important;
+  }
+  @include desktop {
+    width: 90%;
   }
 }
 .menus__intro {
@@ -38,7 +65,10 @@ img {
     .fas {
       position: absolute;
       right: 62px;
-      top: 90px;
+      top: 36px;
+      @include desktop {
+        top: 15px;
+      }
     }
   }
 }
@@ -67,15 +97,17 @@ img {
   padding: 0;
   animation: 900ms apparition;
   opacity: 0;
-  :hover {
+  :hover,
+  :active {
     cursor: pointer;
   }
-  :hover {
+  :hover,
+  :active {
     + .selection__plat__checked {
       transform: scaleX(1);
       transition: width 1000ms;
       transform-origin: right;
-      width: 20%;
+      width: 30%;
       span {
         display: inline-block;
         transform: rotate(1turn);
@@ -87,10 +119,12 @@ img {
     font-size: 40px;
     line-height: 0px;
     width: 100%;
+    @include desktop {
+      font-size: 25px;
+    }
     &__nom {
       font-weight: 700;
       margin-left: 20px;
-      text-align: start;
     }
     &__comm {
       display: flex;
@@ -104,12 +138,18 @@ img {
         white-space: nowrap;
         height: 50px;
         line-height: 50px;
+        @include desktop {
+          font-size: 20px;
+        }
       }
       &__prix {
         font-weight: 700;
         font-size: 30px;
         width: 30%;
         text-align: end;
+        @include desktop {
+          font-size: 20px;
+        }
       }
     }
   }
